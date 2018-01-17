@@ -108,6 +108,7 @@ public abstract class HeadMutiRCAdapter<T> extends MultiRCAdapter<BaseRCViewHold
                     viewId = headSupport.headLayoutId();
                     break;
                 case OTHER_TYPE:
+
                     viewId = converId;
                     break;
             }
