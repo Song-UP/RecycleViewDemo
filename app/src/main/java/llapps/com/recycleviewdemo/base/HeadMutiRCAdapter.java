@@ -13,7 +13,7 @@ import java.util.Set;
 /**
  * Created by wusong on 2018/1/16.
  *
- * 用来显示 一个标题对应多个内容
+ *  通过data获得title， 然后把title显示在布局上
  */
 
 public abstract class HeadMutiRCAdapter<T> extends MultiRCAdapter<BaseRCViewHold> {
@@ -21,12 +21,10 @@ public abstract class HeadMutiRCAdapter<T> extends MultiRCAdapter<BaseRCViewHold
     protected LinkedHashMap<String, Integer> headMap;  //存放head的字符串和存放的位置
     private final int HEAD_TYPE = 0;  //标记头部
 
-
     public HeadMutiRCAdapter(Context context, int layoutId ,List dataList, HeadSupport headSupport) {
         super(context, dataList, null);
         this.headSupport = headSupport;
         this.converId = layoutId;
-
         this.multiItemTypeSupport = new HeadMultiItemTypeSupport();
         headMap = new LinkedHashMap<>();
         setDataHeadMap();
@@ -95,20 +93,19 @@ public abstract class HeadMutiRCAdapter<T> extends MultiRCAdapter<BaseRCViewHold
     /**
      * 设置头部的viewId
      */
-    public class HeadMultiItemTypeSupport implements MultiItemTypeSupport<String> {
+    public class HeadMultiItemTypeSupport implements MultiItemTypeSupport<T> {
         private final int OTHER_TYPE = 1;
 
         @Override
-        public int getItemType(int position, String data) {
+        public int getItemType(int position, T data) {
             return headMap.containsValue(position) ? HEAD_TYPE : OTHER_TYPE;
         }
-
         @Override
         public int getItemView(int type) {
             int viewId = converId;
             switch (type){
                 case HEAD_TYPE:
-                    viewId = headSupport.headTextViewId();
+                    viewId = headSupport.headLayoutId();
                     break;
                 case OTHER_TYPE:
                     viewId = converId;
