@@ -1,15 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="llapps.com.recycleviewdemo.MainActivity">
+    tools:context="llapps.com.recycleviewdemo.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_adapter_base"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="简单adapter封装"
+            android:onClick="onClick"
+
+            />
+        <Button
+            android:id="@+id/btn_multi_adpter"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="多布局的封装"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/btn_adpter_head"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="根据data添加头部"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/btn_adpter_span"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="不同列的封装"
+            android:onClick="onClick"
+            />
+
+    </LinearLayout>
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycleview"
+
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem = "@layout/item_image"
         />
-</RelativeLayout>
+</LinearLayout>

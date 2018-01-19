@@ -16,6 +16,13 @@ public abstract class BaseRCAdapter<T> extends RecyclerView.Adapter<BaseRCViewHo
     protected int converId;
     protected Context context;
 
+    /**
+     *
+     * @param context
+     * @param convertId
+     * @param dataList
+     * {@hide}
+     */
     public BaseRCAdapter( Context context,  int convertId, List<T> dataList) {
         this.converId = convertId;
         this.dataList = dataList;
@@ -43,8 +50,6 @@ public abstract class BaseRCAdapter<T> extends RecyclerView.Adapter<BaseRCViewHo
 
     @Override
     public int getItemViewType(int position) {
-
-
         return super.getItemViewType(position);
     }
 }

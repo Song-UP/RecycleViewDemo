@@ -16,7 +16,7 @@ import java.util.Set;
  *  通过data获得title， 然后把title显示在布局上
  */
 
-public abstract class HeadMutiRCAdapter<T> extends MultiRCAdapter<BaseRCViewHold> {
+public abstract class HeadMutiRCAdapter<T> extends MultiRCAdapter {
     protected HeadSupport headSupport;
     protected LinkedHashMap<String, Integer> headMap;  //存放head的字符串和存放的位置
     private final int HEAD_TYPE = 0;  //标记头部

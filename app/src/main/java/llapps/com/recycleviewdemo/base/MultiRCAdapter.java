@@ -12,7 +12,7 @@ import java.util.List;
  * 多种布局的RecycleView
  */
 
-public abstract class MultiRCAdapter<T> extends BaseRCAdapter {
+public abstract class MultiRCAdapter<T> extends BaseRCAdapter<T> {
     protected MultiItemTypeSupport multiItemTypeSupport;
 
     public MultiRCAdapter(Context context, List<T> dataList, MultiItemTypeSupport multiItemTypeSupport) {
