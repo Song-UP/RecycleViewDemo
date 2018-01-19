@@ -19,3 +19,5 @@
  效果图如下
  
  <img src="https://github.com/Song-UP/ImageStore/blob/master/Image/RecycleViewAdapter/baseRcSpan.png?raw=true" width="280" height="475" />
+ <\br>
+ 我的博客 http://mp.blog.csdn.net/postedit/79111243
