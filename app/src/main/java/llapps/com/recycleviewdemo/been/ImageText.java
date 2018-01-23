@@ -27,6 +27,14 @@ public class ImageText {
         this.span = span;
     }
 
+    public ImageText(String Title, String imageUrl, int type, int span, int iconId) {
+        this.Title = Title;
+        this.imageUrl = imageUrl;
+        this.type = type;
+        this.span = span;
+        this.iconId = iconId;
+    }
+
     public ImageText(int ic_launcher, String text, int type) {
         this.iconId = ic_launcher;
         this.text = text;

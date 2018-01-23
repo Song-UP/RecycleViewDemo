@@ -6,13 +6,15 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.List;
 
+import llapps.com.recycleviewdemo.base.rcAdapter.MultiRCAdapter;
+
 /**
  * Created by wusong on 2018/1/18.
  *
  *不同列
  */
 
-public abstract class SpanRCAdapter<T> extends MultiRCAdapter<T>{
+public abstract class SpanRCAdapter<T> extends MultiRCAdapter<T> {
 
     private SpanSupport<T> spanSupport;
 

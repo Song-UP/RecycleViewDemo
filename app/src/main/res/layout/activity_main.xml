@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="llapps.com.recycleviewdemo.MainActivity"
-    android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    >
         <Button
             android:id="@+id/btn_adapter_base"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="简单adapter封装"
             android:onClick="onClick"
@@ -20,38 +19,38 @@
             />
         <Button
             android:id="@+id/btn_multi_adpter"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="多布局的封装"
             android:onClick="onClick"
             />
         <Button
             android:id="@+id/btn_adpter_head"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="根据data添加头部"
+            android:text="根据data添加头部(头部文字)"
             android:onClick="onClick"
             />
         <Button
             android:id="@+id/btn_adpter_span"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="不同列的封装"
+            android:text="不同列的封装(头部文字+内容)"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/btn_adpter_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="带有banner的不同列"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/btn_adpter_span_decor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="带有banner的不同列，设置间距"
             android:onClick="onClick"
             />
 
-    </LinearLayout>
-
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycleview"
-
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem = "@layout/item_image"
-        />
 </LinearLayout>

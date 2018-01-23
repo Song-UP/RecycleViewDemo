@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion 26
     buildToolsVersion "27.0.1"
     defaultConfig {
         applicationId "llapps.com.recycleviewdemo"
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -21,11 +22,17 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    //    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //        exclude group: 'com.android.support', module: 'support-annotations'
+    //    })
+    //noinspection GradleCompatible
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
     compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+    //ButterKnift
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //实现轮播图
+    compile 'com.youth.banner:banner:1.4.10'
 }

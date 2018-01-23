@@ -1,4 +1,4 @@
-package llapps.com.recycleviewdemo.base;
+package llapps.com.recycleviewdemo.base.rcAdapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

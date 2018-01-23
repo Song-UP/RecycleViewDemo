@@ -1,8 +1,6 @@
-package llapps.com.recycleviewdemo.base;
+package llapps.com.recycleviewdemo.base.rcAdapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Matrix;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.LinkedHashMap;
