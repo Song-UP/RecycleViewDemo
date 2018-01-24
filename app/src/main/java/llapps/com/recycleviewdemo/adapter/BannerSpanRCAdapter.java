@@ -16,13 +16,14 @@ import llapps.com.recycleviewdemo.base.rcAdapter.MultiRCAdapter;
 /**
  * Created by wusong on 2018/1/18.
  *
- *不同列  headMap 是 第一个是 <K,1>
+ *不同列  headMap 是 第一个是 <K,topCount>
  */
 
 public abstract class BannerSpanRCAdapter<T,K> extends MultiRCAdapter<T> {
     private final int BANNER_TYPE = 0; //banner
     private final int TITLE_TYPE = 1;  //标题
     private final int DETAIL_TYPE = 2;  //detail
+    private int topCount = 1; //最上方不规则的个数
 
     protected BannerSupport headSupport;
     protected LinkedHashMap<K, Integer> headMap;  //存放head的字符串和存放的位置
@@ -115,7 +116,7 @@ public abstract class BannerSpanRCAdapter<T,K> extends MultiRCAdapter<T> {
 
     @Override
     public int getItemCount() {
-        return dataList.size() + headMap.size() +1;
+        return dataList.size() + headMap.size() +topCount;
     }
 
     /**
@@ -124,7 +125,7 @@ public abstract class BannerSpanRCAdapter<T,K> extends MultiRCAdapter<T> {
 
     int isLeft =1;//等于1代表在左边 -1在右边
     public void setDataHeadMap() {
-        int headIndex = 1;
+        int headIndex = topCount;
         headMap.clear();
         for (int i = 0; i<dataList.size(); i++){
             K headStr = (K) headSupport.getTitle(dataList.get(i));
@@ -163,7 +164,7 @@ public abstract class BannerSpanRCAdapter<T,K> extends MultiRCAdapter<T> {
             }
         }
         positon -= headCournt;
-        positon--;  //因为 data 的 position是从2开始，也就是index=1； head的map.index = 1,而data的index应为1
+        positon-=topCount;  //因为 data 的 position是从2开始，也就是index=1； head的map.index = 1,而data的index应为1
         return  positon;
     }
 
