@@ -1,4 +1,4 @@
-package llapps.com.recycleviewdemo.base;
+package llapps.com.rcadaptepatting.base;
 
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.List;
 
-import llapps.com.recycleviewdemo.base.rcAdapter.MultiRCAdapter;
+import llapps.com.rcadaptepatting.base.rcAdapter.MultiRCAdapter;
 
 /**
  * Created by wusong on 2018/1/18.

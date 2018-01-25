@@ -1,4 +1,4 @@
-package llapps.com.recycleviewdemo.adapter;
+package llapps.com.rcadaptepatting.adapter;
 
 import android.content.Context;
 

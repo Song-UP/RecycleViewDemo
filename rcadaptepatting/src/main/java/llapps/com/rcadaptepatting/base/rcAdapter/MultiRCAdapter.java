@@ -1,4 +1,4 @@
-package llapps.com.recycleviewdemo.base.rcAdapter;
+package llapps.com.rcadaptepatting.base.rcAdapter;
 
 import android.content.Context;
 import android.view.ViewGroup;

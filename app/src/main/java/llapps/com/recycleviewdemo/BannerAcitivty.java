@@ -17,9 +17,9 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import llapps.com.recycleviewdemo.adapter.BannerDecoraRCAdapter;
-import llapps.com.recycleviewdemo.adapter.BannerSpanRCAdapter;
-import llapps.com.recycleviewdemo.base.rcAdapter.BaseRCViewHold;
+import llapps.com.rcadaptepatting.adapter.BannerDecoraRCAdapter;
+import llapps.com.rcadaptepatting.adapter.BannerSpanRCAdapter;
+import llapps.com.rcadaptepatting.base.rcAdapter.BaseRCViewHold;
 import llapps.com.recycleviewdemo.been.GoodDetail;
 import llapps.com.recycleviewdemo.been.SpaceDecoration;
 import llapps.com.recycleviewdemo.been.banner.BannerBeen;

@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="banner_hei">160dp</dimen>
+    <!-- -->
+    <dimen name="item_title_hei">48dp</dimen>
+    <dimen name="tv_marginLeft">12dp</dimen>
+    <dimen name="item_title">18sp</dimen>
+
+    <dimen name="item_more_paddingLeft">20dp</dimen>
+
+    <dimen name="item_icon_hei">42dp</dimen>
+    <dimen name="item_icon_wei">82dp</dimen>
+
+    <dimen name="ry_item_height">160dp</dimen>
+
+    <dimen name="item_top">5dp</dimen>
+</resources>

@@ -14,11 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import llapps.com.recycleviewdemo.base.SpanRCAdapter;
-import llapps.com.recycleviewdemo.base.rcAdapter.BaseRCAdapter;
-import llapps.com.recycleviewdemo.base.rcAdapter.BaseRCViewHold;
-import llapps.com.recycleviewdemo.base.rcAdapter.HeadMutiRCAdapter;
-import llapps.com.recycleviewdemo.base.rcAdapter.MultiRCAdapter;
+import llapps.com.rcadaptepatting.base.SpanRCAdapter;
+import llapps.com.rcadaptepatting.base.rcAdapter.BaseRCAdapter;
+import llapps.com.rcadaptepatting.base.rcAdapter.BaseRCViewHold;
+import llapps.com.rcadaptepatting.base.rcAdapter.HeadMutiRCAdapter;
+import llapps.com.rcadaptepatting.base.rcAdapter.MultiRCAdapter;
 import llapps.com.recycleviewdemo.been.ImageText;
 import llapps.com.recycleviewdemo.util.Constance;
 
