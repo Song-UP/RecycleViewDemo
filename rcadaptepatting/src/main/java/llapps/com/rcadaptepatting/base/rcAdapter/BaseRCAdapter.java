@@ -45,6 +45,8 @@ public abstract class BaseRCAdapter<T> extends RecyclerView.Adapter<BaseRCViewHo
 
     @Override
     public int getItemCount() {
+        if (dataList == null)
+            return 0;
         return dataList.size();
     }
 
