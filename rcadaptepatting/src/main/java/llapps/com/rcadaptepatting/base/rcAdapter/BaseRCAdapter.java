@@ -31,7 +31,7 @@ public abstract class BaseRCAdapter<T> extends RecyclerView.Adapter<BaseRCViewHo
 
     @Override
     public BaseRCViewHold onCreateViewHolder(ViewGroup parent, int viewType) {
-        BaseRCViewHold baseRCViewHold = BaseRCViewHold.get(context, converId, null);
+        BaseRCViewHold baseRCViewHold = BaseRCViewHold.get(context, converId, parent);
         return baseRCViewHold;
     }
 
